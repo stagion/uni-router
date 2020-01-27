@@ -7,14 +7,25 @@
   "license": "MIT",
   "private": false,
   "devDependencies": {
+    "@babel/core": "^7.7.5",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.7.4",
+    "@babel/preset-env": "^7.7.6",
+    "@babel/preset-react": "^7.7.4",
+    "@babel/preset-typescript": "^7.7.4",
+    "@types/history": "^4.7.3",
+    "@types/jest": "^24.0.23",
     "@typescript-eslint/eslint-plugin": "^2.11.0",
     "@typescript-eslint/parser": "^2.11.0",
     "eslint": "^6.7.2",
     "eslint-plugin-react": "^7.17.0",
     "husky": ">=1",
+    "jest": "^24.9.0",
     "lerna": "^3.19.0",
     "lint-staged": ">=8",
     "prettier": "^1.19.1",
+    "ts-jest": "^24.2.0",
+    "typedoc": "^0.15.4",
     "typescript": "^3.7.3"
   },
   "husky": {
@@ -25,7 +36,6 @@
   "lint-staged": {
     "*.{js,css,json,md}": [
       "prettier --write",
-      "eslint",
       "git add"
     ]
   }
